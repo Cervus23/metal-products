@@ -1,0 +1,17 @@
+.language-wrapper {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 9px;
+}
+
+.language-container {
+  display: flex;
+  margin-left: 33px;
+}
+
+.flag {
+}
+
+.arrow {
+  margin-left: 13px;
+}
