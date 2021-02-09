@@ -8,16 +8,18 @@ const Menu = () => {
   return (
     <div className="menu-container">
       <ul className="menu-sections">
-        {menuSections.map((section) =>
+        {menuSections.map((section, key) =>
           section === "Услуги" ? (
-            <li className="menu-section">
+            <li className="menu-section" key={key}>
               <div className="services">
                 {section}
                 <img className="arrow" src={arrow} alt="arrow" />
               </div>
             </li>
           ) : (
-            <li className="menu-section">{section}</li>
+            <li className="menu-section" key={key}>
+              {section}
+            </li>
           )
         )}
       </ul>

@@ -1,7 +1,8 @@
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 import reducers from "./store/reducers";
-import Header from "./containers/Header/index";
+import Header from "./containers/Header";
+import Banner from "./containers/Banner";
 import "./App.css";
 
 const store = createStore(reducers);
@@ -11,6 +12,7 @@ function App() {
     <Provider store={store}>
       <div className="App">
         <Header />
+        <Banner />
       </div>
     </Provider>
   );
