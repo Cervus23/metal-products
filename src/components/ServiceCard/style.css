@@ -1,0 +1,32 @@
+.card-container {
+  display: flex;
+  height: 201px;
+  flex-grow: 1;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  width: 333px;
+  height: 60px;
+  background-color: rgba(62, 62, 62, 0.9);
+  margin-top: 32px;
+}
+
+.card-text {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  margin-left: 15px;
+}
+
+.vertical-line {
+  display: flex;
+  width: 2px;
+  height: 46px;
+  background-color: #e4b56b;
+  margin-right: 15px;
+}

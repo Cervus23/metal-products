@@ -18,6 +18,11 @@
   padding-bottom: 9px;
   border-right: 1px solid rgba(62, 62, 62, 0.22);
   list-style-type: none;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3e3e3e;
 }
 
 .services {

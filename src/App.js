@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 import reducers from "./store/reducers";
 import Header from "./containers/Header";
 import Banner from "./containers/Banner";
+import ServiceSection from "./containers/ServiceSection";
 import "./App.css";
 
 const store = createStore(reducers);
@@ -13,6 +14,7 @@ function App() {
       <div className="App">
         <Header />
         <Banner />
+        <ServiceSection />
       </div>
     </Provider>
   );

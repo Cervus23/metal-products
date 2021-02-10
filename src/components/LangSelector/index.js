@@ -1,5 +1,5 @@
 import React from "react";
-import russianFlag from "../../img/Flag_of_Russia 1.svg";
+import russianFlag from "../../img/flags/Flag_of_Russia 1.svg";
 import arrow from "../../img/Arrow.svg";
 import "./style.css";
 

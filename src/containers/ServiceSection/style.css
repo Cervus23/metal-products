@@ -1,0 +1,49 @@
+.service-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  color: #3e3e3e;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.horizontal-line {
+  background-color: rgba(228, 181, 107, 0.8);
+  height: 2px;
+  width: 82px;
+  border-width: 0;
+  margin: 0;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1180px;
+  margin-top: 30px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.btn-calculation {
+  width: 379px;
+  height: 43px;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-family: "Raleway";
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  border-radius: 0%;
+  border: none;
+  background-color: #454647;
+}
