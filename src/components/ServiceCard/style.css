@@ -1,4 +1,4 @@
-.card-container {
+.serv-card-container {
   display: flex;
   height: 201px;
   flex-grow: 1;
@@ -6,7 +6,7 @@
   margin-bottom: 10px;
 }
 
-.text-container {
+.serv-text-container {
   display: flex;
   justify-content: space-between;
   width: 333px;
@@ -15,7 +15,7 @@
   margin-top: 32px;
 }
 
-.card-text {
+.serv-card-title {
   font-family: "Raleway";
   font-weight: 500;
   font-style: normal;
@@ -23,7 +23,7 @@
   margin-left: 15px;
 }
 
-.vertical-line {
+.serv-vertical-line {
   display: flex;
   width: 2px;
   height: 46px;

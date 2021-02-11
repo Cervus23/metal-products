@@ -1,0 +1,31 @@
+.comp-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.comp-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  color: #3e3e3e;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.comp-horizontal-line {
+  background-color: rgba(228, 181, 107, 0.8);
+  height: 2px;
+  width: 82px;
+  border-width: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.company-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

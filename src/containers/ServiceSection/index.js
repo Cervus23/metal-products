@@ -8,9 +8,18 @@ import fifth from "../../img/serviceCards/fifth.png";
 import sixth from "../../img/serviceCards/sixth.png";
 import seventh from "../../img/serviceCards/seventh.png";
 import eighth from "../../img/serviceCards/eighth.png";
+// import {
+//   first,
+//   second,
+//   third,
+//   fourth,
+//   fifth,
+//   sixth,
+//   seventh,
+//   eighth,
+// } from "../../img/serviceCards/*.png";
 import "./style.css";
 
-// const cards = [first, second, third, fourth, fifth, sixth];
 const cards = [
   { id: first, text: "Производство оборудования" },
   { id: second, text: "Металлическая мебель" },

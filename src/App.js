@@ -4,6 +4,7 @@ import reducers from "./store/reducers";
 import Header from "./containers/Header";
 import Banner from "./containers/Banner";
 import ServiceSection from "./containers/ServiceSection";
+import CompanySection from "./containers/CompanySection";
 import "./App.css";
 
 const store = createStore(reducers);
@@ -15,6 +16,7 @@ function App() {
         <Header />
         <Banner />
         <ServiceSection />
+        <CompanySection />
       </div>
     </Provider>
   );
