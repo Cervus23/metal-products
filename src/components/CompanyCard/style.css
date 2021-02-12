@@ -12,11 +12,18 @@
   background-color: rgba(62, 62, 62, 0.9);
 }
 
+.comp-card-container.right {
+  justify-content: flex-end;
+}
+
 .comp-text-container {
   display: flex;
   flex-direction: column;
   width: 750px;
   height: 260px;
+}
+
+.comp-text-container.right {
 }
 
 .comp-card-title {
@@ -29,6 +36,10 @@
   margin-top: 20px;
   margin-left: 90px;
   margin-bottom: 25px;
+}
+
+.comp-card-title.right {
+  margin-left: 35px;
 }
 
 .comp-card-text {
@@ -44,10 +55,19 @@
   width: 545px;
 }
 
+.comp-card-text.right {
+  margin-left: 35px;
+}
+
 .comp-vertical-line {
   display: flex;
   width: 2px;
   height: 212px;
   background-color: #e4b56b;
   margin-right: 61px;
+}
+
+.comp-vertical-line.right {
+  margin-right: 0;
+  margin-left: 78px;
 }

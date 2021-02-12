@@ -29,3 +29,7 @@
   flex-direction: column;
   width: 100%;
 }
+
+.comp-card-container:last-child {
+  margin-bottom: 0;
+}
