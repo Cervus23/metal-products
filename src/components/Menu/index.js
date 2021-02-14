@@ -12,14 +12,15 @@ const Menu = () => {
           section === "Услуги" ? (
             <li className="menu-section" key={key}>
               <div className="services">
-                {section}
+              <a href="#" className="menu-link">{section}</a> 
                 <img className="arrow" src={arrow} alt="arrow" />
               </div>
             </li>
           ) : (
-            <li className="menu-section" key={key}>
-              {section}
-            </li>
+              <li className="menu-section" key={key}>
+                <a href="#" className="menu-link">{section}</a> 
+                {section === "Главная" ? <hr className="underline" /> : null}
+              </li>
           )
         )}
       </ul>

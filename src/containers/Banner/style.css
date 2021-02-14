@@ -3,9 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  flex-grow: 1;
+  margin-left: auto;
+  margin-right: auto;
   height: 448px;
-  width: 1360px;
+  width: 100%;
   background-image: url("../../img/Banner.png");
+  background-size: cover;
 }
 
 .slogan-container {

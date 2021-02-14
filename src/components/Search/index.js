@@ -5,7 +5,7 @@ import "./style.css";
 const Search = () => {
   return (
     <div className="search-wrapper">
-      <div className="search-contaider">
+      <div className="search-container">
         <img className="search" src={search} alt="search" />
       </div>
     </div>

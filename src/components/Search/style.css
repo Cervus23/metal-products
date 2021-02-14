@@ -2,10 +2,11 @@
   display: flex;
   align-items: flex-end;
   margin-left: 163px;
-  padding-bottom: 9px;
+  margin-bottom: 21px;
 }
 
 .search-container {
+  height: 18px;
 }
 
 .search {
