@@ -11,7 +11,7 @@ const Menu = () => {
         {menuSections.map((section, key) =>
           section === "Услуги" ? (
             <li className="menu-section" key={key}>
-              <div className="services">
+              <div className="services-menu">
               <a href="#" className="menu-link">{section}</a> 
                 <img className="arrow" src={arrow} alt="arrow" />
               </div>
@@ -30,13 +30,4 @@ const Menu = () => {
 
 export default Menu;
 
-{
-  /* <li className="menu-item">Главная</li>
-        <li className="menu-item">
-          Услуги
-          <img src={arrow} alt="arrow" />
-        </li>
-        <li className="menu-item">Наши работы</li>
-        <li className="menu-item">О нас</li>
-        <li className="menu-item">Контакты</li> */
-}
+

@@ -18,8 +18,13 @@
   flex-direction: column;
   padding-left: 30px;
   padding-right: 30px;
-  /* padding-bottom: 9px; */
   border-right: 1px solid rgba(62, 62, 62, 0.22);
+}
+
+.menu-sections :last-child {
+  z-index: 2;
+  border: none;
+  padding-right: 0;
 }
 
 .menu-link {
@@ -34,7 +39,6 @@
   color: #3e3e3e;
   text-decoration: none;
   margin-bottom: 6px;
-
 }
 
 .underline {
@@ -47,7 +51,7 @@
   margin: 0;
 }
 
-.services {
+.services-menu {
   display: flex;
   align-self: center;
 }

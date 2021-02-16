@@ -1,17 +1,47 @@
 import React from "react";
-import russianFlag from "../../img/flags/Flag_of_Russia 1.svg";
+import {connect} from 'react-redux'
+import ruFlag from "../../img/flags/Flag_of_Russia.svg";
+import uaFlag from '../../img/flags/Flag_of_Ukraine.svg'
+import ukFlag from '../../img/flags/Flag_of_the_United_Kingdom.svg'
 import arrow from "../../img/Arrow.svg";
+import {toggleLangSelector} from '../../store/actions'
 import "./style.css";
 
-const LangSelector = () => {
+// const flags = [ruFlag, uaFlag, ukFlag]
+
+const LangSelector = ({
+  toggleLangSelector,
+  activeLangSelector
+}) => {
   return (
     <div className="language-wrapper">
       <div className="language-container">
-        <img className="flag" src={russianFlag} alt="Flag of Russia" />
-        <img className="arrow" src={arrow} alt="arrow" />
+        <div className="selection">
+          <div className="selected">
+            <img className="flag " src={ruFlag} alt="ruFlag" />
+          </div>
+          <div className={`langbox ${activeLangSelector ? 'dropdown-l' : 'hide-l'}`}>
+            <img className='flag inbox' src={uaFlag} alt="uaFlag" />
+            <img className="flag inbox" src={ukFlag} alt="ukFlag" />
+          </div>
+        </div>
+        <img className={`arrow ${activeLangSelector ? 'up-l' : 'down-l'}`} src={arrow} alt="arrow" onClick={() => toggleLangSelector()}/>
+        
       </div>
     </div>
   );
 };
 
-export default LangSelector;
+const mapStateToProps = ({
+  activeLangSelector
+}) => ({
+  activeLangSelector
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  toggleLangSelector: () => {
+    dispatch(toggleLangSelector())
+  }
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(LangSelector);
