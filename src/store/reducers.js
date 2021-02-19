@@ -2,7 +2,7 @@ import { TOGGLE_LANG_SELECTOR, TOGGLE_SEARCH } from './actions'
 
 const initialState = {
   activeLangSelector: false, 
-  activeSearch: false, 
+  activeSearch: false,
 };
 
 const reducer = (state = initialState, { type, payload }) => {

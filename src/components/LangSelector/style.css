@@ -80,7 +80,6 @@
   100% {
     transform: translateY(82px);
   }
-
 }
 
 @keyframes hiding-l {
@@ -90,7 +89,6 @@
   100% {
     transform: translateY(0);
   }
-
 }
 
 @keyframes up-l {
@@ -100,7 +98,6 @@
   100% {
     transform: rotate(180deg);
   }
-
 }
 
 @keyframes down-l {
@@ -110,5 +107,4 @@
   100% {
     transform: rotate(0);
   }
-
 }
