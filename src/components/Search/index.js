@@ -7,22 +7,25 @@ import "./style.css";
 
 const Search = ({
   toggleSearch,
-  activeSearch
+  activeSearch,
+  touchedSearch,
 }) => {
   return (
     <div className="search-wrapper">
       <div className="search-container">
-        <img className={`search-img ${activeSearch ? 'up-s' : 'down-s'}`} src={search} alt="search" onClick={() => toggleSearch()}/>
+        <img className={`search-img ${touchedSearch ? 'touched' : ''} ${activeSearch ? 'up-s' : 'down-s'}`} src={search} alt="search" onClick={() => toggleSearch()}/>
       </div>
-      <input className={`search-input ${activeSearch ? 'dropdown-s' : 'hide-s'}`} type="text" placeholder="Поиск" />
+      <input className={`search-input ${touchedSearch ? 'touched' : ''} ${activeSearch ? 'dropdown-s' : 'hide-s'}`} type="text" placeholder="Поиск" />
     </div>
   );
 };
 
 const mapStateToProps = ({
-  activeSearch
+  activeSearch,
+  touchedSearch,
 }) => ({
-  activeSearch
+  activeSearch,
+  touchedSearch,
 });
 
 const mapDispatchToProps = (dispatch) => ({

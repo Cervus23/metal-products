@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 100%;
 }
 
 .search-container {
@@ -28,7 +27,7 @@
 .search-input {
   position: absolute;
   display: flex;
-  width: 283px;
+  width: 90%;
   height: 41px;
   padding-left: 31px;
   padding-right: 0;
@@ -48,11 +47,11 @@
   animation: dropdown-s .1s ease-in 1 forwards;
 }
 
-.hide-s {
+.touched.hide-s {
   animation: hide-s .1s ease-in 1 forwards;
 }
 
-.down-s {
+.touched.down-s {
   animation: down-s .1s ease-in 1 forwards;
 }
 

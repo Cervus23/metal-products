@@ -11,7 +11,8 @@ import "./style.css";
 
 const LangSelector = ({
   toggleLangSelector,
-  activeLangSelector
+  activeLangSelector,
+  touchedLang,
 }) => {
   return (
     <div className="language-wrapper">
@@ -20,12 +21,12 @@ const LangSelector = ({
           <div className="selected">
             <img className="flag " src={ruFlag} alt="ruFlag" />
           </div>
-          <div className={`langbox ${activeLangSelector ? 'dropdown-l' : 'hide-l'}`}>
+          <div className={`langbox ${touchedLang ? 'touched' : ''} ${activeLangSelector ? 'dropdown-l' : 'hide-l'}`}>
             <img className='flag inbox' src={uaFlag} alt="uaFlag" />
             <img className="flag inbox" src={ukFlag} alt="ukFlag" />
           </div>
         </div>
-        <img className={`arrow ${activeLangSelector ? 'up-l' : 'down-l'}`} src={arrow} alt="arrow" onClick={() => toggleLangSelector()}/>
+        <img className={`arrow ${touchedLang ? 'touched' : ''} ${activeLangSelector ? 'up-l' : 'down-l'}`} src={arrow} alt="arrow" onClick={() => toggleLangSelector()}/>
         
       </div>
     </div>
@@ -33,9 +34,11 @@ const LangSelector = ({
 };
 
 const mapStateToProps = ({
-  activeLangSelector
+  activeLangSelector,
+  touchedLang,
 }) => ({
-  activeLangSelector
+  activeLangSelector,
+  touchedLang,
 });
 
 const mapDispatchToProps = (dispatch) => ({
