@@ -1,5 +1,14 @@
 .logo {
-  margin-left: 90px;
   margin-top: 5px;
   margin-bottom: 11px;
+}
+
+@media (max-width: 360px) {
+  .logo {
+    display: flex;
+    width: 80px;
+    height: 56px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
 }

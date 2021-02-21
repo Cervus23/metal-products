@@ -7,6 +7,11 @@ const menuSections = ["Главная", "Услуги", "Наши работы",
 const Menu = () => {
   return (
     <div className="menu-container">
+      <div className="mob-menu">
+        <div className="burgerline"></div>
+        <div className="burgerline"></div>
+        <div className="burgerline"></div>
+      </div>
       <ul className="menu-sections">
         {menuSections.map((section, key) =>
           section === "Услуги" ? (

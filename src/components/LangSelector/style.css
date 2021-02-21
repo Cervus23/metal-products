@@ -1,6 +1,4 @@
 .language-wrapper {
-  position: relative;
-  left: -112px;
   display: flex;
   align-items: flex-end;
   margin-bottom: 21px;
@@ -21,12 +19,12 @@
   height: 21px;
 }
 
-.selected {
+.selected-lang {
   display: flex;
   align-items: flex-end;
   justify-content: center;
   height: 103px;
-  width: 51px;
+  width: 53px;
   background-color: white;
   margin-bottom: -21px;
   padding-bottom: 21px;
@@ -38,11 +36,11 @@
 }
 
 .touched.down-l {
-  animation: down-l .2s ease-in 1 forwards;
+  animation: down-l 0.2s ease-in 1 forwards;
 }
 
 .up-l {
-  animation: up-l .2s ease-in 1 forwards;
+  animation: up-l 0.2s ease-in 1 forwards;
 }
 
 .langbox {
@@ -56,11 +54,11 @@
 }
 
 .dropdown-l {
-  animation: dropdown-l .2s ease-in 1 forwards;
+  animation: dropdown-l 0.2s ease-in 1 forwards;
 }
 
 .touched.hide-l {
-  animation: hiding-l .2s ease-in 1 forwards;
+  animation: hiding-l 0.2s ease-in 1 forwards;
 }
 
 .langbox :first-child {
@@ -104,5 +102,14 @@
   }
   100% {
     transform: rotate(0);
+  }
+}
+
+@media (max-width: 360px) {
+  .language-container {
+    display: none;
+  }
+  .language-wrapper {
+    display: none;
   }
 }

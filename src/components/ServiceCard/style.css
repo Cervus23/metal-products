@@ -1,5 +1,7 @@
 .serv-card-container {
   display: flex;
+  background-size: cover;
+  width: 26%;
   height: 201px;
   flex-grow: 1;
   margin-right: 10px;

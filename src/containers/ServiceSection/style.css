@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 860px;
   width: 100%;
 }
 
@@ -22,6 +21,17 @@
   width: 82px;
   border-width: 0;
   margin: 0;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 87%;
+  justify-content: space-between;
+  z-index: 1;
+  margin-top: 30px;
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
 .gears {
@@ -92,17 +102,6 @@
   height: 176px;
 }
 
-.services-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  z-index: 1;
-  width: 1180px;
-  margin-top: 30px;
-  margin-left: 90px;
-  margin-right: 90px;
-}
-
 .btn-calculation {
   width: 379px;
   height: 43px;
@@ -118,4 +117,3 @@
   border: none;
   background-color: #454647;
 }
-

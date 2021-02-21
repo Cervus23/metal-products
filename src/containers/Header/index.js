@@ -6,11 +6,20 @@ import Logo from "../../components/Logo";
 import "./style.css";
 
 const Header = () => {
+  const width = window.innerWidth
   return (
     <div className="header">
+      {console.log(width)}
       <Logo />
-      <Menu />
-      <Search />
+      {width <= 360 ? 
+      <div className="mob-search-menu">
+        <Search /> <Menu />
+      </div> 
+      : 
+      <div>
+        <Menu />
+        <Search />
+      </div>}
       <LangSelector />
     </div>
   );

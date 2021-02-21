@@ -18,7 +18,7 @@ const LangSelector = ({
     <div className="language-wrapper">
       <div className="language-container">
         <div className="selection">
-          <div className="selected">
+          <div className="selected-lang">
             <img className="flag " src={ruFlag} alt="ruFlag" />
           </div>
           <div className={`langbox ${touchedLang ? 'touched' : ''} ${activeLangSelector ? 'dropdown-l' : 'hide-l'}`}>

@@ -1,6 +1,5 @@
 .search-wrapper {
   position: relative;
-  left: -112px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -11,7 +10,6 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
-  width: 314px;
   height: 22px;
   padding-bottom: 21px;
   background-color: white;
@@ -26,37 +24,39 @@
 
 .search-input {
   position: absolute;
+  left: -253px;
   display: flex;
-  width: 90%;
+  width: 263px;
   height: 41px;
   padding-left: 31px;
   padding-right: 0;
   border: none;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   font-family: "Raleway";
   font-size: 16px;
   line-height: 21px;
-  color: #3E3E3E;
+  color: #3e3e3e;
+  z-index: 0;
 }
 
-.search-input:focus{
+.search-input:focus {
   outline: none;
 }
 
 .dropdown-s {
-  animation: dropdown-s .1s ease-in 1 forwards;
+  animation: dropdown-s 0.1s ease-in 1 forwards;
 }
 
 .touched.hide-s {
-  animation: hide-s .1s ease-in 1 forwards;
+  animation: hide-s 0.1s ease-in 1 forwards;
 }
 
 .touched.down-s {
-  animation: down-s .1s ease-in 1 forwards;
+  animation: down-s 0.1s ease-in 1 forwards;
 }
 
 .up-s {
-  animation: up-s .1s ease-in 1 forwards;
+  animation: up-s 0.1s ease-in 1 forwards;
 }
 
 @keyframes dropdown-s {
@@ -66,7 +66,6 @@
   100% {
     transform: translateY(42px);
   }
-
 }
 
 @keyframes hide-s {
@@ -76,7 +75,6 @@
   100% {
     transform: translateY(0);
   }
-
 }
 
 @keyframes up-s {
@@ -86,7 +84,6 @@
   100% {
     transform: translateY(50px);
   }
-
 }
 
 @keyframes down-s {
@@ -96,5 +93,18 @@
   100% {
     transform: translateY(0);
   }
+}
 
+@media (max-width: 360px) {
+  .search-input {
+    display: none;
+  }
+  .search-container {
+    height: auto;
+    padding: 0;
+    margin-right: 25px;
+  }
+  .search-img {
+    margin: 0;
+  }
 }
