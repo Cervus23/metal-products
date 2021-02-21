@@ -5,6 +5,10 @@
   height: 106px;
 }
 
+.search-and-menu {
+  display: flex;
+}
+
 @media (max-width: 360px) {
   .header {
     width: 323px;

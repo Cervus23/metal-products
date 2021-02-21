@@ -10,13 +10,17 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
+  position: relative;
+  right: -145px;
   height: 22px;
-  padding-bottom: 21px;
-  background-color: white;
+  padding-bottom: 20px;
+  margin-bottom: 1px;
+  background-color: #fff;
   z-index: 1;
 }
 
 .search-img {
+  cursor: pointer;
   height: 18px;
   margin-right: 22px;
   z-index: 1;
@@ -24,9 +28,9 @@
 
 .search-input {
   position: absolute;
-  left: -253px;
+  left: -112px;
   display: flex;
-  width: 263px;
+  width: 266px;
   height: 41px;
   padding-left: 31px;
   padding-right: 0;
@@ -100,6 +104,7 @@
     display: none;
   }
   .search-container {
+    right: 0;
     height: auto;
     padding: 0;
     margin-right: 25px;

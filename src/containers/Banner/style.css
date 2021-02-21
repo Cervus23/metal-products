@@ -52,9 +52,14 @@
 .slider-item {
   width: 14px;
   height: 14px;
+  cursor: pointer;
   background-color: #ffffff;
   border-radius: 50%;
   margin-right: 15px;
+}
+
+.slider-container :last-child {
+  margin-right: 0;
 }
 
 .slider-item:hover {
@@ -63,4 +68,28 @@
 
 .active {
   background-color: rgba(228, 181, 107);
+}
+
+@media (max-width: 360px) {
+  .banner-container {
+    height: 216px;
+    background-image: url("../../img/Banner-mob.png");
+  }
+  .slogan-container {
+    width: 252px;
+    height: 110px;
+  }
+  .slogan-text {
+    font-size: 14px;
+    line-height: 25px;
+    margin-left: 16px;
+  }
+  .slogan-line {
+    width: 208px;
+  }
+  .slider-item {
+    height: 8px;
+    width: 8px;
+    margin-right: 10px;
+  }
 }

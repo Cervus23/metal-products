@@ -27,6 +27,7 @@ const cards = [
 
 
 const ServiceSection = () => {
+  const width = window.innerWidth
   return (
     <div className="service-section">
       <h2 className="service-title">Услуги</h2>
@@ -75,11 +76,13 @@ const ServiceSection = () => {
       
       <div className="services-container">
         {cards.map((card) => (
-          <ServiceCard url={card.id} text={card.text} key={card.id} />
+        <ServiceCard url={card.id} text={card.text} key={card.id} />
         ))}
       </div>
       <button className="btn-calculation">
-        Быстрый расчет цены по чертежу
+        { width <= 360 ? "Расчет стоимости" :
+          "Быстрый расчет цены по чертежу"
+        }
       </button>
     </div>
   );

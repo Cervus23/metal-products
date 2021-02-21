@@ -1,7 +1,6 @@
 .serv-card-container {
   display: flex;
   background-size: cover;
-  width: 26%;
   height: 201px;
   flex-grow: 1;
   margin-right: 10px;
@@ -15,20 +14,46 @@
   height: 60px;
   background-color: rgba(62, 62, 62, 0.9);
   margin-top: 32px;
+  padding-right: 15px;
 }
 
 .serv-card-title {
+  display: flex;
+  align-items: center;
+  margin: 0;
   font-family: "Raleway";
   font-weight: 500;
   font-style: normal;
+  font-size: 20px;
   color: white;
   margin-left: 15px;
 }
 
 .serv-vertical-line {
-  display: flex;
   width: 2px;
   height: 46px;
   background-color: #e4b56b;
-  margin-right: 15px;
+}
+
+@media (max-width: 360px) {
+  .serv-card-container {
+    width: 159px;
+    height: 105px;
+    background-size: contain;
+  }
+  .serv-text-container {
+    width: 139px;
+    height: 36px;
+    font-size: 12px;
+    line-height: 14px;
+    padding-right: 10px;
+  }
+  .serv-card-title {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 6px;
+  }
+  .serv-vertical-line {
+    height: 23px;
+  }
 }

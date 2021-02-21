@@ -33,3 +33,13 @@
 .comp-card-container:last-child {
   margin-bottom: 0;
 }
+
+@media (max-width: 360px) {
+  .comp-title {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .comp-horizontal-line {
+    width: 60px;
+  }
+}

@@ -26,12 +26,16 @@
 .services-container {
   display: flex;
   flex-wrap: wrap;
-  width: 87%;
-  justify-content: space-between;
+  width: 1180px;
   z-index: 1;
   margin-top: 30px;
   margin-left: 90px;
   margin-right: 90px;
+}
+
+.services-container :nth-child(3n),
+:last-child {
+  margin-right: 0;
 }
 
 .gears {
@@ -116,4 +120,33 @@
   border-radius: 0%;
   border: none;
   background-color: #454647;
+}
+
+@media (max-width: 360px) {
+  .service-title {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .gears {
+    display: none;
+  }
+  .horizontal-line {
+    width: 60px;
+  }
+  .services-container {
+    width: 328px;
+    margin-top: 20px;
+  }
+  .services-container :nth-child(3n) {
+    margin-right: 10px;
+  }
+  .services-container :nth-child(2n) {
+    margin-right: 0;
+  }
+  .btn-calculation {
+    width: 328px;
+    height: 36px;
+    margin-top: 5px;
+  }
 }
