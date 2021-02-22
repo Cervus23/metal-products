@@ -3,7 +3,8 @@ import media from "../../img/media2.png";
 import "./style.css";
 
 const about = ["Наши работы", "Контакты", "Доставка", "Форма заказа"];
-const services = [
+
+const servicesDesc = [
   "Производство оборудования",
   "Металлическая мебель",
   "Металлоконструкции",
@@ -14,9 +15,28 @@ const services = [
   "Ремонт техники",
 ];
 
+const servicesMob = [
+  "Производство оборудования",
+  "Арт-объекты",
+  "Металлическая мебель",
+  "Металлообработка",
+  "Лазерная резка",
+  "Металлоконструкции",
+  "Аренда спецтехники",
+];
+
 const socMedia = ["facebook", "instagram", "youtube", "google"];
 
 const Footer = () => {
+  const width = window.innerWidth
+  const serviceslist = (link, id) => 
+  (
+    <li className="service-item" key={id}>
+      <a className="service-link" href="#">
+        {link}
+      </a>
+    </li>
+  )
   return (
     <div className="footer">
       <div className="info-container">
@@ -39,13 +59,7 @@ const Footer = () => {
           <div className="footer-text-container">
             <h4 className="footer-title">Услуги</h4>
             <ul className="services-list">
-              {services.map((link, id) => (
-                <li className="service-item" key={id}>
-                  <a className="service-link" href="#">
-                    {link}
-                  </a>
-                </li>
-              ))}
+              {width <= 360 ? servicesMob.map(serviceslist) : servicesDesc.map(serviceslist)}
             </ul>
           </div>
 
@@ -53,9 +67,15 @@ const Footer = () => {
         </div>
         <div className="contacts">
           <h4 className="footer-title">Контактная информация</h4>
-          <div className="adress">
+          {width <= 360 
+          ?<div className="adress">
+            Заводская улица, 2В, <br/> Буча, <br/> Киевская область, 08292
+          </div>
+          :<div className="adress">
             Заводская улица, 2В, Буча, Киевская область, 08292
           </div>
+          }
+          
           <div className="schedule">
             <div className="days">ПН - ПТ:</div>
             <div className="time">09:00 - 18:00</div>
@@ -74,9 +94,16 @@ const Footer = () => {
         </div>
       </div>
       <div className="copyright">
+        {width <= 360 ?
+        <p className="copyright-text">
+          by <br/>
+           <b>Stubbs</b>
+        </p> 
+        :
         <p className="copyright-text">
           Developed by <b>Stubbs</b>
         </p>
+      }
       </div>
     </div>
   );

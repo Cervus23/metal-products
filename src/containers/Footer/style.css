@@ -3,7 +3,7 @@
   flex-direction: column;
   align-self: center;
   width: 100%;
-  max-height: 300px;
+  height: 300px;
   margin: 0;
 }
 
@@ -43,7 +43,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  /* margin-right: 10px; */
 }
 
 .footer-title {
@@ -98,7 +97,7 @@
 }
 
 .footer-vl {
-  width: 1px;
+  min-width: 1px;
   height: 55px;
   background: #e4b56b;
 }
@@ -173,4 +172,73 @@
 .copyright-text {
   margin: 0;
   margin-bottom: 20px;
+}
+
+@media (max-width: 360px) {
+  .footer {
+    height: auto;
+  }
+  .info-container {
+    width: 360px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-text-container {
+    margin-top: 20px;
+    max-width: 281px;
+  }
+  .footer-title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .about {
+    margin-left: 16px;
+    max-width: 128px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .about-list {
+    margin-top: 20px;
+  }
+  .services {
+    margin-left: 21px;
+    margin-right: 10px;
+  }
+  .services-list {
+    columns: 1;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .contacts {
+    margin: 0;
+    margin-top: 15px;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    line-height: 19px;
+  }
+  .adress {
+    max-width: 195px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .schedule {
+    margin-bottom: 20px;
+  }
+  .youtube {
+    margin-right: 0;
+  }
+  .google {
+    display: none;
+  }
+  .copyright {
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .copyright-text {
+    margin-bottom: 17px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
