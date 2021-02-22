@@ -1,5 +1,5 @@
 import React from "react";
-import media from "../../img/media2.png";
+import media from "../../img/media.png";
 import "./style.css";
 
 const about = ["Наши работы", "Контакты", "Доставка", "Форма заказа"];

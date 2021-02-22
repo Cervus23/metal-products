@@ -8,7 +8,7 @@
   margin-right: auto;
   height: 448px;
   width: 100%;
-  background-image: url("../../img/Banner.png");
+  background-image: url("../../img/desctop/Banner.png");
   background-size: cover;
 }
 
@@ -73,7 +73,7 @@
 @media (max-width: 360px) {
   .banner-container {
     height: 216px;
-    background-image: url("../../img/Banner-mob.png");
+    background-image: url("../../img/mobile/Banner-mob.png");
   }
   .slogan-container {
     width: 252px;
